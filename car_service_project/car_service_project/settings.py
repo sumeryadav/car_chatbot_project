@@ -28,6 +28,8 @@ print(f"DEBUG: Key starts with: {GEMINI_API_KEY[:4]}")
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-^0(pj@lgi7za8gt6k*vw1xv5d32g-u#m&tr9tt%vm&8gmrlmc_'
 
+DEBUG = os.getenv("DEBUG", "True") == "True"
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
